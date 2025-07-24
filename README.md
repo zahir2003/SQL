@@ -24,8 +24,7 @@ It is designed to strengthen my **database skills for Data Science, Backend Deve
 ## 🛠️ **Tools & Technologies**
 
 - **MySQL / Oracle / SQLite** – Database Management Systems  
-- **SQL** – Structured Query Language  
-- **VS Code / DBeaver** – Used for writing and executing queries  
+- **SQL** – Structured Query Language    
 - **Git & GitHub** – Version control and portfolio showcasing
 
 ---
