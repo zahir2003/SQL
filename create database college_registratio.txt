@@ -1,0 +1,118 @@
+create database college_registration_management_system;
+
+use college_registration_management_system;
+
+create table login(
+username varchar (25),
+password varchar(25)
+);
+
+insert into login
+values
+('admin','12345');
+
+select *from login;
+
+create table student(
+name varchar(40),
+fname varchar(40),
+rollno varchar(15),
+dob varchar(30),
+address varchar(100),
+phone varchar(12),
+email varchar(30),
+class_x varchar(8),
+ class_xii varchar(8),
+ aadhar varchar(13),
+ Course varchar(10),
+ Branch varchar(40)
+ );
+ 
+ select *from student;
+ 
+ create table studentleave(
+ rollno varchar(20),
+ date varchar(50),
+ duration varchar(20)
+ );
+ 
+ select *from studentleave;
+ 
+ create table subject(
+ rollno varchar(20),
+ semester varchar(20),
+ subject1 varchar(70),
+ subject2 varchar(70),
+ subject3 varchar(70),
+ subject4 varchar(70),
+ subject5 varchar(70),
+ subject6 varchar(70),
+ subject7 varchar(70)
+ );
+ 
+ select * from subject;
+ 
+ create table marks(
+ rollno varchar(20),
+ semester varchar(20),
+ marks1 varchar(20),
+ marks2 varchar(20),
+ marks3 varchar(20),
+ marks4 varchar(20),
+ marks5 varchar(20),
+ marks6 varchar(20),
+ marks7 varchar(20)
+ );
+ 
+ select * from marks;
+ 
+ create table Fee(
+ Course_Name varchar(100),
+ Admission_Fee varchar(20),
+ Semester_1 varchar(20),
+ Semester_2 varchar(20),
+ Semester_3 varchar(20),
+ Semester_4 varchar(20),
+ Semester_5 varchar(20),
+ Semester_6 varchar(20),
+ Semester_7 varchar(20),
+ Semester_8 varchar(20)
+ );
+ 
+ insert into Fee
+ (Course_Name,Admission_Fee,Semester_1,Semester_2,Semester_3,Semester_4,Semester_5,Semester_6,Semester_7,Semester_8)
+ values
+ ("   B.Tech CSE","    20000","    85000","    85000","    85000","    85000","    85000","    85000","    85000","    85000"),
+ ("   B.Tech ECE","    20000","    70000","    70000","    70000","    70000","    70000","    70000","    70000","    70000"),
+ ("   B.Tech EE","     20000","    65000","    65000","    65000","    65000","    65000","    65000","    65000","    65000"),
+ ("   B.Tech CE","     20000","    65000","    65000","    65000","    65000","    65000","    65000","    65000","    65000"),
+ ("   B.Tech ME","     20000","    65000","    65000","    65000","    65000","    65000","    65000","    65000","    65000"),
+ ("   BCA","     20000","    50000","    50000","   50000","    50000","    50000","    50000","    50000","    50000"),
+ ("   BBA","     20000","    65000","    65000","   65000","    65000","    65000","    65000","    65000","    65000"),
+ ("   B.Sc PHYSICS","     20000","    35000","    35000","    35000","    35000","    35000","    35000","    35000","   35000"),
+ ("   B.Sc CHEMISTRY","     20000","    35000","    35000","    35000","    35000","    35000","    35000","    35000","    35000"),
+ ("   B.Sc MATH","     20000","    35000","    35000","    35000","    35000","    35000","    35000","    35000","    35000"),
+ ("   B.Sc BIOLOGY","     20000","   35000","    35000","    35000","    35000","    35000","    35000","    35000","    35000"),
+ ("   M.Tech CSE","     30000","    100000","    100000","    100000","    100000",null,null,null,null),
+ ("   M.Tech ECE","     30000","    90000","    90000","    90000","    90000",null,null,null,null),
+ ("   M.Tech EE","     30000","    85000","    85000","    85000","    85000",null,null,null,null),
+ ("   M.Tech CE","     30000","    85000","    85000","    85000","   85000",null,null,null,null),
+ ("   M.Tech ME","     30000","    85000","    85000","    85000","    85000",null,null,null,null),
+ ("   MCA","     30000","    70000","    70000","    70000","    70000",null,null,null,null),
+ ("   MBA","     30000","    85000","   85000","     85000","    85000",null,null,null,null),
+ ("   M.Sc PHYSICS","     30000","    45000","    45000","    45000","    45000",null,null,null,null),
+ ("   M.Sc CHEMISTRY","     30000","    45000","    45000","    45000","    45000",null,null,null,null),
+ ("   M.Sc MATH","     30000","    45000","    45000","    45000","    45000",null,null,null,null),
+ ("   M.Sc BIOLOGY","     30000","    45000","    45000","    45000","    45000",null,null,null,null);
+
+ select *from Fee;
+ 
+ Create table collegeFee(
+ rollno varchar(30),
+ course varchar(30),
+ branch varchar(30),
+ semester varchar(30),
+ total varchar(30)
+ );
+ 
+ 
